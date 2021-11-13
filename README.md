@@ -25,11 +25,6 @@ sh prepare_env.sh
 
 ## Train
 
-**Notes:**
-
-+ Our experiments conduct on 4X1080Ti
-+ Batch: 4 x 4
-
 ### VOC dataset
 * Generate GFLV2-R34 pretrained detector (served as teacher) on PASCAL_VOC 0712:
   ```
