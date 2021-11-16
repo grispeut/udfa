@@ -1,4 +1,5 @@
-# udfa
+# Robust and Accurate Object Detection via Self-Knowledge Distillation
+paper:https://arxiv.org/abs/2111.07239
 
 ## Environments
 
