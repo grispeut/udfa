@@ -84,8 +84,9 @@ sh prepare_env.sh
 
 | model                    |  AP | AP50 | AP75 | APl | APm | APs | config |
 | :-----------------: |:-----------------: |:-----------------:|:-----------------:|:-----------------:|:-----------------:|:-----------------:|:-----------------:|
-| Teacher | 0.491 | 0.675 | 0.537 | 0.618 | 0.530 | 0.301 | [config](https://github.com/grispeut/udfa/blob/main/configs/gflv2/gflv2_r2n101_dcn_fpn_coco_std.py) |
-| UDFA | 0.513 | 0.698 | 0.562 | 0.643 | 0.554 | 0.319 | [config](https://github.com/grispeut/udfa/blob/main/configs/gflv2/gflv2_r2n101_dcn_fpn_coco_kdss.py) |
+| Teacher(1x) | 0.491 | 0.675 | 0.537 | 0.618 | 0.530 | 0.301 | [config](https://github.com/grispeut/udfa/blob/main/configs/gflv2/gflv2_r2n101_dcn_fpn_coco_std.py) |
+| STD(2x) | 0.503 | 0.688 | 0.548 | 0.631 | 0.540 | 0.311 | [config](https://github.com/grispeut/udfa/blob/main/configs/gflv2/gflv2_r2n101_dcn_fpn_coco_std_2x.py) |
+| UDFA(1x) | 0.513 | 0.698 | 0.562 | 0.643 | 0.554 | 0.319 | [config](https://github.com/grispeut/udfa/blob/main/configs/gflv2/gflv2_r2n101_dcn_fpn_coco_kdss.py) |
 
 ## Acknowledgement
 Our project is based on [ImageCorruptions](https://github.com/bethgelab/imagecorruptions), [MMDetection](https://github.com/open-mmlab/mmdetection) and [MMCV](https://github.com/open-mmlab/mmcv).
