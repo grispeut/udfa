@@ -79,6 +79,12 @@ sh prepare_env.sh
   python -m torch.distributed.launch --nproc_per_node=4 test.py --launcher pytorch --configs/gflv2/gflv2_r34_fpn_coco_std.py  --checkpoint weights/gflv2_r34_coco_pre.pth --num_steps 0 --step_size 2 --eval bbox
   ```
 
+## COCO test-dev2017 results
+* gflv2_r2n101_dcn trained on 2*A6000, with single scale testing 
+| model                    |  AP | AP50 | AP75 | APl | APm | APs | config |
+| :-----------------: |:-----------------: |:-----------------:|:-----------------:|:-----------------:|:-----------------:|:-----------------:|:-----------------:|
+| Teacher | 0.491 | 0.675 | 0.537 | 0.618 | 0.530 | 0.301 | [config](https://github.com/grispeut/udfa/configs/gflv2/gflv2_r2n101_dcn_fpn_coco_std.py) |
+| UDFA | 0.513 | 0.698 | 0.562 | 0.643 | 0.554 | 0.319 | [config](https://github.com/grispeut/udfa/configs/gflv2/gflv2_r2n101_dcn_fpn_coco_kdss.py) |
 
 ## Acknowledgement
 Our project is based on [ImageCorruptions](https://github.com/bethgelab/imagecorruptions), [MMDetection](https://github.com/open-mmlab/mmdetection) and [MMCV](https://github.com/open-mmlab/mmcv).
