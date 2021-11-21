@@ -81,6 +81,7 @@ sh prepare_env.sh
 
 ## COCO test-dev2017 results
 * gflv2_r2n101_dcn trained on 2*A6000, with single scale testing 
+
 | model                    |  AP | AP50 | AP75 | APl | APm | APs | config |
 | :-----------------: |:-----------------: |:-----------------:|:-----------------:|:-----------------:|:-----------------:|:-----------------:|:-----------------:|
 | Teacher | 0.491 | 0.675 | 0.537 | 0.618 | 0.530 | 0.301 | [config](https://github.com/grispeut/udfa/configs/gflv2/gflv2_r2n101_dcn_fpn_coco_std.py) |
